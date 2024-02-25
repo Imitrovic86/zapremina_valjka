@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina valjka</title>
+</head>
+
+<body>
+
+    <script>
+        let r = parseFloat(prompt("Unesite poluprecnik:"))
+        let H = parseFloat(prompt("Unesite visinu:"))
+
+        if (r > 0 && H > 0) {
+            const V = Math.pow(r, 2) * Math.PI * H
+            document.write("<p>Zapremina valjka je:" + V + "</p>")
+        } else {
+            document.write("Unesite validnu brojcanu vrednost")
+        }
+    </script>
+</body>
+
+</html>
